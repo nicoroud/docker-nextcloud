@@ -17,7 +17,8 @@ git clone https://github.com/nicoroud/docker-nexcloud.git
 ```
 
 **2. Modify the .env file tu suite your needs**
-```
+
+```shell
 #
 # Configuration for Nextcloud using NGINX WebProxy
 #
