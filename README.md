@@ -4,9 +4,7 @@ This image is based on [official nextcloud image](https://hub.docker.com/r/libra
 It runs with NGINX proxy and Let´s Encrypt.
 
 
-[![Docker Stars](https://img.shields.io/docker/stars/nicoroud/docker-nextcloud.svg)](https://hub.docker.com/r/nicoroud/docker-nextcloud/)
-[![Docker Pulls](https://img.shields.io/docker/pulls/nicoroud/docker-nextcloud.svg)](https://hub.docker.com/r/nicoroud/docker-nextcloud/)
-[![Docker Automated build](https://img.shields.io/docker/automated/nicoroud/docker-nextcloud.svg)](https://hub.docker.com/r/nicoroud/docker-nextcloud)
+[![Docker Stars](https://img.shields.io/docker/stars/nicoroud/docker-nextcloud.svg)](https://hub.docker.com/r/nicoroud/docker-nextcloud/)  [![Docker Pulls](https://img.shields.io/docker/pulls/nicoroud/docker-nextcloud.svg)](https://hub.docker.com/r/nicoroud/docker-nextcloud/)  [![Docker Automated build](https://img.shields.io/docker/automated/nicoroud/docker-nextcloud.svg)](https://hub.docker.com/r/nicoroud/docker-nextcloud)
 
 
 ### Prerequisites
