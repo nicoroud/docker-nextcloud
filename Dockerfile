@@ -2,7 +2,6 @@ FROM nextcloud:latest
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y \
     imagemagick \
-    php-imagick \
     supervisor \
   && rm -rf /var/lib/apt/lists/* \
   && mkdir /var/log/supervisord /var/run/supervisord
