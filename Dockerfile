@@ -1,4 +1,4 @@
-FROM nextcloud:latest
+FROM nextcloud:15.0.5
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y \
     imagemagick \
