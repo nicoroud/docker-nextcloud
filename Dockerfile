@@ -1,4 +1,4 @@
-FROM nextcloud::apache
+FROM nextcloud:apache
 
 COPY version /root/
 RUN chmod +x /root/version \
