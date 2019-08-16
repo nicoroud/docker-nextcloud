@@ -1,13 +1,17 @@
+2019-08-16
+  Ajout de la variable d'environement "NEXTCLOUD_UPDATE=1"
+  ENV NEXTCLOUD_UPDATE=1
+
 2019-07-08
-  mise à joour vers nextcloud 16.0.2
+  mise à jour vers nextcloud 16.0.2
 
 2019-05-17
-  mise à joour vers nextcloud 16.0.1
+  mise à jour vers nextcloud 16.0.1
 2019-02-09
-  mise à joour vers nextcloud 15.0.4
+  mise à jour vers nextcloud 15.0.4
 
 2019-01-14
-  mise à joour vers nextcloud 14.0.6
+  mise à jour vers nextcloud 14.0.6
 
 2018-11-27
   mise à jour vers nextcloud 14.0.4
