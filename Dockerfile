@@ -12,8 +12,8 @@ RUN apt-get update && apt-get upgrade -y && apt-get install -y \
 
 COPY supervisord.conf /etc/supervisor/supervisord.conf
 
-ENV NEXTCLOUD_UPDATE=1
-
 RUN /root/version -i
+
+ENV NEXTCLOUD_UPDATE=1
 
 CMD ["/usr/bin/supervisord"]
