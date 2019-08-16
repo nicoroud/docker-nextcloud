@@ -1,7 +1,7 @@
 FROM nextcloud:latest
 
-COPY version.sh /root/
-RUN chmod +x /root/version.sh \
+COPY version /root/
+RUN chmod +x /root/version \
     && /root/version -l
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y \
