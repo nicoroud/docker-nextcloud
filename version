@@ -16,17 +16,11 @@ InstalledVersion()
 	cat /usr/src/nextcloud/version.php | grep OC_VersionString | cut -d\' -f 2
 }
 
-while [ "$1" != "" ]; do
-	case $opt in 
-		-i)	shift
-			InstalledVersion
-			;;
-		-l)	shift
-			echo $lastversions
-			;;
-		*)
-			exit
-			;;
+while getopts il option
+do
+	case "${option}" in
+		i) InstalledVersion;;
+		l) echo $lastversions;;
 	esac
-	shift
-done
+done	
+exit 0
