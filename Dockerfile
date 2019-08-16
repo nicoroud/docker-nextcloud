@@ -2,7 +2,7 @@ FROM nextcloud:latest
 
 COPY version.sh /root/
 RUN chmod +x /root/version.sh \
-    && /root/version.sh -l
+    && /root/version -l
 
 RUN apt-get update && apt-get upgrade -y && apt-get install -y \
     imagemagick \
@@ -14,6 +14,6 @@ COPY supervisord.conf /etc/supervisor/supervisord.conf
 
 ENV NEXTCLOUD_UPDATE=1
 
-RUN /root/version.sh -i
+RUN /root/version -i
 
 CMD ["/usr/bin/supervisord"]
