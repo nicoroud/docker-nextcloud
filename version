@@ -11,16 +11,13 @@ lastversions=( $( curl -fsSL 'https://download.nextcloud.com/server/releases/' |
 	grep -oE '[[:digit:]]+(\.[[:digit:]]+){2}' | \
 	sort -urV ) )
 
-InstalledVersion()
-{
-	cat /usr/src/nextcloud/version.php | grep OC_VersionString | cut -d\' -f 2
-}
+installedversion=`cat /usr/src/nextcloud/version.php 2>/dev/null | grep OC_VersionString | cut -d\' -f 2`
 
 while getopts il option
 do
 	case "${option}" in
-		i) InstalledVersion;;
-		l) echo $lastversions;;
+		i) echo "Installed version : $installedversion";;
+		l) echo "Last version : $lastversions";;
 	esac
 done	
 exit 0
