@@ -1,5 +1,9 @@
 FROM nextcloud:latest
 
+COPY version.sh /root/
+RUN chmod +x /root/version.sh \
+    && /root/version.sh
+
 RUN apt-get update && apt-get upgrade -y && apt-get install -y \
     imagemagick \
     supervisor \
